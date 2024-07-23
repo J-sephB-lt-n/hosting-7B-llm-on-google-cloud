@@ -48,8 +48,9 @@ __website_text_here__
         },
     ).json()["content"]
     end_time = time.perf_counter()
+    print(f"query time: {(end_time-start_time):,.2f}")
     time_taken_per_question_nsecs.append(end_time - start_time)
     print(full_prompt, llm_response, sep="")
 
 for idx, query_time in enumerate(time_taken_per_question_nsecs):
-    print(f"query {idx+1}: {query_time:,.5f} seconds")
+    print(f"query {idx+1}: {query_time:,.2f} seconds")
