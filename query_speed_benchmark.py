@@ -40,7 +40,7 @@ __website_text_here__
 {user_prompt}"""
     start_time = time.perf_counter()
     llm_response = requests.post(
-        url="http://localhost:8080/completion",
+        url="http://localhost:6969/completion",
         json={
             "prompt": full_prompt.replace("__website_text_here__", website_text),
             "n_predict": 100,
