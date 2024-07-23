@@ -1,6 +1,6 @@
 # hosting-7B-llm-on-google-cloud
 
-In this repo, I'm seeing how fast the Large Language Model InternLM2.5-7B-Chat (q4_k_m quantized) runs on different Google Cloud Compute Engine Virtual Machines.
+In this repo, I'm seeing how fast the Large Language Model InternLM2.5-7B-Chat (q5_k_m quantized) runs on different Google Cloud Compute Engine Virtual Machines.
 
 On each machine, I run the same 5 queries, which all involve answering questions based on ~1000 words of text taken from a website - you can see the benchmarking code here: [./query_speed_benchmark.py](./query_speed_benchmark.py)
 
